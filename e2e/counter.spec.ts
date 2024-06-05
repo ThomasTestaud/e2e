@@ -8,9 +8,8 @@ test('clicks on counter twice', async ({ page }) => {
     
     await counterButton.click();
     await counterButton.click();
-    await counterButton.click();
 
     
     const counterValue = await page.locator("#counter").innerText();
-    expect(counterValue).toBe("count is 3");
+    expect(counterValue).toBe("count is 2");
 });
