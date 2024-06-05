@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "e2e": "playwright test",
-    "start": "node server.js"
+    "e2e": "playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
