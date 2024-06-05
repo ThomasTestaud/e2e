@@ -25,5 +25,8 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-    - name: Run Playwright tests
-      run: npx playwright test --reporter junit
+    - name: Start Server
+      run: npm start &
+    - name: Wait for Server
+      run: sleep 5
+
